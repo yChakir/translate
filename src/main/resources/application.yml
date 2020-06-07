@@ -1,0 +1,10 @@
+server:
+  port: 4040
+
+logging:
+  level:
+    org.springframework.web: INFO
+    ma.tiwtiw: DEBUG
+  file:
+    path: ./log
+    name: application.log

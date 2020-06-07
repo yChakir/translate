@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://tiwtiw-database/prod_translate
+      database: prod_translate
