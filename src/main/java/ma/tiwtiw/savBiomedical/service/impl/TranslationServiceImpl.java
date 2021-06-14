@@ -1,9 +1,9 @@
-package ma.tiwtiw.translate.service.impl;
+package ma.tiwtiw.savBiomedical.service.impl;
 
 import java.util.List;
 import ma.tiwtiw.core.service.impl.BaseMongoTemplateServiceImpl;
-import ma.tiwtiw.translate.model.Translation;
-import ma.tiwtiw.translate.service.TranslationService;
+import ma.tiwtiw.savBiomedical.model.Translation;
+import ma.tiwtiw.savBiomedical.service.TranslationService;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;

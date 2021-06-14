@@ -1,29 +1,33 @@
-package ma.tiwtiw.translate.dto;
+package ma.tiwtiw.savBiomedical.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Builder.Default;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import ma.tiwtiw.core.dto.BaseDto;
-import ma.tiwtiw.translate.model.Translation;
+import ma.tiwtiw.core.model.BaseModel;
+import org.springframework.data.mongodb.core.index.Indexed;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class TranslationDto extends BaseDto<Translation, String> {
+public class Translation extends BaseModel<String> {
 
+  @Indexed(unique = true)
   private String code;
 
-  private List<LabelDto> labels;
+  @Default
+  private List<Label> labels = new ArrayList<>();
 
   @Data
   @NoArgsConstructor
   @AllArgsConstructor
-  public static class LabelDto {
+  public static class Label {
 
     private String locale;
 

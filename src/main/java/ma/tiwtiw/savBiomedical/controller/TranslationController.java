@@ -1,12 +1,12 @@
-package ma.tiwtiw.translate.controller;
+package ma.tiwtiw.savBiomedical.controller;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import ma.tiwtiw.core.controller.impl.BaseRestController;
-import ma.tiwtiw.translate.dto.TranslationDto;
-import ma.tiwtiw.translate.model.Translation;
-import ma.tiwtiw.translate.service.TranslationService;
+import ma.tiwtiw.savBiomedical.dto.TranslationDto;
+import ma.tiwtiw.savBiomedical.model.Translation;
+import ma.tiwtiw.savBiomedical.service.TranslationService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

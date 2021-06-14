@@ -1,8 +1,8 @@
-package ma.tiwtiw.translate.service;
+package ma.tiwtiw.savBiomedical.service;
 
 import java.util.List;
 import ma.tiwtiw.core.service.BaseService;
-import ma.tiwtiw.translate.model.Translation;
+import ma.tiwtiw.savBiomedical.model.Translation;
 
 public interface TranslationService extends BaseService<Translation, String> {
 

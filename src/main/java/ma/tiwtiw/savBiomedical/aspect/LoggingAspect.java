@@ -1,4 +1,4 @@
-package ma.tiwtiw.translate.aspect;
+package ma.tiwtiw.savBiomedical.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import ma.tiwtiw.core.controller.aspect.BaseLoggingAspect;

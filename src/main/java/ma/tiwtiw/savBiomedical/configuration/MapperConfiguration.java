@@ -1,4 +1,4 @@
-package ma.tiwtiw.translate.configuration;
+package ma.tiwtiw.savBiomedical.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
