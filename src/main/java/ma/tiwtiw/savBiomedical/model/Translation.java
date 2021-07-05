@@ -22,6 +22,9 @@ public class Translation extends BaseModel<String> {
   private String code;
 
   @Default
+  private Boolean translated = Boolean.TRUE;
+
+  @Default
   private List<Label> labels = new ArrayList<>();
 
   @Data

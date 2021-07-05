@@ -3,6 +3,7 @@ package ma.tiwtiw.savBiomedical.dto;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Builder.Default;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,9 @@ import ma.tiwtiw.savBiomedical.model.Translation;
 public class TranslationDto extends BaseDto<Translation, String> {
 
   private String code;
+
+  @Default
+  private Boolean translated = Boolean.TRUE;
 
   private List<LabelDto> labels;
 
